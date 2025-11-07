@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" width="1920" height="327.36" viewBox="0 0 1920 327.36">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #1294a5;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_6" data-name="圖層 6">
+    <path id="footer_vector" class="cls-1" d="M960,226.59C581.88,226.59,240.86,139.53,0,0v327.36h1920V0c-240.86,139.53-581.88,226.59-960,226.59Z"/>
+  </g>
+</svg>

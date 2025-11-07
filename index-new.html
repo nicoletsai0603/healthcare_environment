@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>醫療事業環境永續資訊管理系統</title>
+
+        <!-- AOS 動畫庫 -->
+        <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+
+        <!-- 主要樣式表 -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style-new.css">
+        <link rel="stylesheet" href="css/mobile.css">
+    </head>
+
+    <body>
+        <noscript>您的瀏覽器不支援JavaScript功能，若網頁功能無法正常使用時，請開啟瀏覽器JavaScript狀態</noscript>
+
+        <!-- 無障礙導盲磚 -->
+        <a href="#accesskey_C" class="skip-link" accesskey="C"
+            title="中央內容區塊(Accesskey C)" id="accesskey_C_link">
+            <span>:::</span>跳到主要內容區塊
+        </a>
+        <a href="#accesskey_U" class="skip-link" accesskey="U"
+            title="上方功能區塊(Accesskey U)">
+            <span>:::</span>上方功能區塊
+        </a>
+
+        <!-- 導覽列 -->
+        <nav class="nav_box">
+            <!-- 頂部區域 -->
+            <div class="top_area">
+                <div class="container">
+                    <a href="#hero" title="衛生福利部 醫療事業環境永續資訊管理系統"
+                        class="logo_box">
+                        <h1 class="mb-0">
+                            <img src="./img/logo.svg"
+                                alt="衛生福利部 醫療事業環境永續資訊管理系統" class="logo">
+                        </h1>
+                    </a>
+                    <div class="more_link">
+
+                        <ul class="first-area">
+                            <li> <a href="#accesskey_U" class="accesskey"
+                                    id="accesskey_U" title="上方功能區塊">:::</a></li>
+                            <li><a href="index-new.html"
+                                    title="回首頁">回首頁</a></li>
+                            <li><a href="sitemap.html"
+                                    title="網站導覽">網站導覽</a></li>
+                            <li><a href="en/index.html" title="English Version"
+                                    lang="en">English</a></li>
+                        </ul>
+                        <div class="group">
+
+                            <ul class="third_area">
+                                <li class="search_btn">
+                                    <a href="javascript:void(0)"
+                                        title="打開搜尋輸入框">
+                                        <img src="img/search.svg" alt="搜尋">
+
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="m-menubar" title="小版選單"
+                            href="javascript:void(0)">
+                            <div class="bar"></div>
+                            <span class="visually-hidden">小版選單</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 主選單區域 -->
+            <div class="main_area" id="accordionBox">
+                <div class="container">
+                    <div class="main_menu">
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="關於我們">
+                                <span>關於我們</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="#announcements"
+                                        title="系統簡介">系統簡介</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#announcements"
+                                        title="最新公告">最新公告</a></li>
+                                <li><a class="dropdown-item" href="#topics"
+                                        title="常見問題">常見問題</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="法規專區">
+                                <span>法規專區</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#links"
+                                        title="醫療相關法規">醫療相關法規</a></li>
+                                <li><a class="dropdown-item" href="#topics"
+                                        title="廢棄物管理規範">廢棄物管理規範</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#announcements"
+                                        title="政策公告">政策公告</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="活動資訊">
+                                <span>活動資訊</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item"
+                                        href="#announcements"
+                                        title="活動預告">活動預告</a></li>
+                                <li><a class="dropdown-item" href="#cases"
+                                        title="活動成果">活動成果</a></li>
+                                <li><a class="dropdown-item"
+                                        href="#announcements"
+                                        title="研討會專區">研討會專區</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="公開查詢">
+                                <span>公開查詢</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#dashboard"
+                                        title="數據儀錶板">數據儀錶板</a></li>
+                                <li><a class="dropdown-item" href="#cases"
+                                        title="案例分享">案例分享</a></li>
+                                <li><a class="dropdown-item" href="#topics"
+                                        title="常見問題">常見問題</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="統計資料">
+                                <span>統計資料</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#dashboard"
+                                        title="碳排趨勢">碳排趨勢</a></li>
+                                <li><a class="dropdown-item" href="#dashboard"
+                                        title="儀表板一覽">儀表板一覽</a></li>
+                                <li><a class="dropdown-item" href="#links"
+                                        title="資料下載">資料下載</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="下載專區">
+                                <span>下載專區</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#links"
+                                        title="申報表單">申報表單</a></li>
+                                <li><a class="dropdown-item" href="#links"
+                                        title="教育訓練教材">教育訓練教材</a></li>
+                                <li><a class="dropdown-item" href="#links"
+                                        title="系統手冊">系統手冊</a></li>
+                            </ul>
+                        </div>
+                        <div class="item dropdown">
+                            <a href="javascript:void(0)" class="dropdown-toggle"
+                                title="登入專區">
+                                <span>登入專區</span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#footer"
+                                        title="會員登入">會員登入</a></li>
+                                <li><a class="dropdown-item" href="#footer"
+                                        title="申請帳號">申請帳號</a></li>
+                                <li><a class="dropdown-item" href="#footer"
+                                        title="忘記密碼">忘記密碼</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+  <div class="container"  data-aos="fade-zoom-in"
+              ><img src="img/資產 8.svg" alt="" style="margin-left: auto ;padding-top: 26px;"></div>
+        <!-- 主要內容區 -->
+        <main id="accesskey_C" tabindex="-1">
+            <a href="#accesskey_C" class="accesskey" title="中央內容區塊">:::</a>
+
+            <!-- 最新資訊區 -->
+            <section class="news-board" id="announcements"
+                aria-labelledby="news-heading" data-aos="fade-zoom-in"
+                data-aos-easing="ease-in-back">
+                <div class="container">
+                     <img src="img/new.svg" style="opacity: 0.7; margin-top: -60px;">
+                    <div class="news-layout">
+                        <!-- 左側：圖片輪播 -->
+                        <aside class="news-hero" data-aos="fade-right"
+                            data-aos-delay="150">
+                            <div class="hero-slider" role="region"
+                                aria-label="永續焦點輪播" aria-live="polite">
+                                <div class="hero-slide is-active"
+                                    data-slide-index="0">
+                                    <img src="img/banner1.jpg" alt="永續焦點示意圖"
+                                        loading="lazy">
+                                    <div class="hero-slide-content">
+                                        <span class="hero-tag">最新消息</span>
+                                        <h3>醫療減碳專案即時指引</h3>
+                                        <p>掌握節能減碳行動的即時政策與補助資源。</p>
+                                    </div>
+                                </div>
+                                <div class="hero-slide" data-slide-index="1">
+                                    <img src="img/banner2.jpg" alt="醫療永續活動宣傳"
+                                        loading="lazy">
+                                    <div class="hero-slide-content">
+                                        <span class="hero-tag">教育訓練</span>
+                                        <h3>綠色醫院實務工作坊</h3>
+                                        <p>分享院所淨零轉型心法，建立跨部門合作能量。</p>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="hero-controls" aria-hidden="true">
+                                <button class="hero-nav hero-prev" type="button"
+                                    aria-label="上一張">
+                                    <span aria-hidden="true">&#10094;</span>
+                                </button>
+                                <button class="hero-nav hero-next" type="button"
+                                    aria-label="下一張">
+                                    <span aria-hidden="true">&#10095;</span>
+                                </button>
+                            </div>
+                            <div class="hero-dots" role="group"
+                                aria-label="輪播頁面切換">
+                                <button class="hero-dot is-active" type="button"
+                                    aria-label="切換至第 1 張" data-slide="0"
+                                    aria-pressed="true"></button>
+                                <button class="hero-dot" type="button"
+                                    aria-label="切換至第 2 張" data-slide="1"
+                                    aria-pressed="false"></button>
+                               
+                            </div>
+                        </aside>
+
+                        <!-- 右側：最新消息 -->
+                        <div class="news-card" data-aos="fade-left"
+                            data-aos-delay="250">
+
+                            <div class="tab-controls-wrapper">
+                                <button class="tab-arrow tab-arrow-left"
+                                    type="button" aria-label="向左滑動">
+                                    <svg width="60" height="60"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M15 18L9 12L15 6"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                                <div class="tab-controls" role="tablist" aria-label="最新資訊分類">
+                                    <ul class="nav nav-pills">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" href="#tab-news" id="tab-news-btn" data-tab="tab-news" role="tab" aria-controls="tab-news" aria-selected="true">最新消息</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#tab-upcoming" id="tab-upcoming-btn" data-tab="tab-upcoming" role="tab" aria-controls="tab-upcoming" aria-selected="false">活動預告</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#tab-announcement" id="tab-announcement-btn" data-tab="tab-announcement" role="tab" aria-controls="tab-announcement" aria-selected="false">公告</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#tab-important" id="tab-important-btn" data-tab="tab-important" role="tab" aria-controls="tab-important" aria-selected="false">重要資訊</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#tab-newsletter" id="tab-newsletter-btn" data-tab="tab-newsletter" role="tab" aria-controls="tab-newsletter" aria-selected="false">相關新聞</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="tab-arrow tab-arrow-right"
+                                    type="button" aria-label="向右滑動">
+                                    <svg width="60" height="60"
+                                        viewBox="0 0 24 24" fill="none">
+                                        <path d="M9 18L15 12L9 6"
+                                            stroke="currentColor"
+                                            stroke-width="2"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="tab-panels">
+                                <div class="tab-panel is-active" id="tab-news"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-news-btn"
+                                    tabindex="0">
+                                    <ul class="news-list" aria-label="最新消息列表">
+                                        <li>
+                                            <div class="news-date">114-10-30</div>
+                                            <a href="#" class="news-title">2025田邊好幫手 填問卷抽豪禮</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-10-03</div>
+                                            <a href="#" class="news-title">115年度醫療部門一般科技補助計畫公開徵求,自114年10月3日...</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-10-21</div>
+                                            <a href="#" class="news-title">醫療部官方網站滿意度調查開跑!填問卷好禮抽回家</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-09-15</div>
+                                            <a href="#" class="news-title">醫療永續創新獎頒獎典禮將於臺北舉行</a>
+                                        </li>
+                                    </ul>
+                                    <button class="more-button" type="button"
+                                        aria-label="查看更多最新消息">了解更多</button>
+                                </div>
+
+                                <div class="tab-panel" id="tab-upcoming"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-upcoming-btn"
+                                    tabindex="0" hidden>
+                                    <ul class="news-list" aria-label="活動預告列表">
+                                        <li>
+                                            <div class="news-date">114-11-15</div>
+                                            <a href="#" class="news-title">醫療永續創新獎頒獎典禮將於臺北舉行</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-11-10</div>
+                                            <a href="#" class="news-title">區域醫療綠色轉型說明會巡迴開跑</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-11-05</div>
+                                            <a href="#" class="news-title">智慧能源管理系統導入觀摩活動開始受理報名</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-11-01</div>
+                                            <a href="#" class="news-title">永續醫療國際研討會聚焦循環經濟與低碳轉型</a>
+                                        </li>
+                                    </ul>
+                                    <button class="more-button" type="button"
+                                        aria-label="查看更多活動預告">了解更多</button>
+                                </div>
+
+                                <div class="tab-panel" id="tab-announcement"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-announcement-btn"
+                                    tabindex="0" hidden>
+                                    <ul class="news-list" aria-label="公告列表">
+                                        <li>
+                                            <div class="news-date">114-08-28</div>
+                                            <a href="#" class="news-title">醫療機構永續績效申報系統維護通知</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-08-14</div>
+                                            <a href="#" class="news-title">112 年度醫療廢棄物清理合約範本更新</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-07-30</div>
+                                            <a href="#" class="news-title">永續評量指標修訂草案公告</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-07-12</div>
+                                            <a href="#" class="news-title">綠色採購執行成果季報填報期限延至 8 月 10 日</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-06-22</div>
+                                            <a href="#" class="news-title">節能績效補助第二梯次受理</a>
+                                        </li>
+                                    </ul>
+                                    <button class="more-button" type="button"
+                                        aria-label="查看更多公告">了解更多</button>
+                                </div>
+
+                                <div class="tab-panel" id="tab-important"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-important-btn"
+                                    tabindex="0" hidden>
+                                    <ul class="news-list" aria-label="重要資訊列表">
+                                        <li>
+                                            <div class="news-date">114-07-25</div>
+                                            <a href="#" class="news-title">醫療廢棄物即時監測平台導入說明會影片上線</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-07-05</div>
+                                            <a href="#" class="news-title">永續報告書撰寫工具包正式釋出</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-06-18</div>
+                                            <a href="#" class="news-title">醫療機構節能改造補助成果專區開放查閱</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-06-02</div>
+                                            <a href="#" class="news-title">醫療永續教育訓練教材全面更新</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-05-26</div>
+                                            <a href="#" class="news-title">醫療永續發展目標(SDGs)案例徵選活動起跑</a>
+                                        </li>
+                                    </ul>
+                                    <button class="more-button" type="button"
+                                        aria-label="查看更多重要資訊">了解更多</button>
+                                </div>
+
+                                <div class="tab-panel" id="tab-newsletter"
+                                    role="tabpanel"
+                                    aria-labelledby="tab-newsletter-btn"
+                                    tabindex="0" hidden>
+                                    <ul class="news-list" aria-label="相關新聞列表">
+                                        <li>
+                                            <div class="news-date">114-09-20</div>
+                                            <a href="#" class="news-title">國際期刊：台灣醫療AI實力受矚目</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-09-12</div>
+                                            <a href="#" class="news-title">偏鄉醫療資源整合論壇 成果豐碩</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-09-05</div>
+                                            <a href="#" class="news-title">遠距醫療服務擴大試辦範圍</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-08-25</div>
+                                            <a href="#" class="news-title">健康大數據應用競賽 激發無限創意</a>
+                                        </li>
+                                        <li>
+                                            <div class="news-date">114-08-18</div>
+                                            <a href="#" class="news-title">長照機構導入智慧科技 提升照護品質</a>
+                                        </li>
+                                    </ul>
+                                    <button class="more-button" type="button"
+                                        aria-label="查看更多相關新聞">了解更多</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- 數據儀錶板 -->
+            <section class="dashboard-section" id="dashboard" style="margin-top: 10px;">
+                <div class="dashboard-images">
+                    <img src="img/儀表板圖表1.jpg" alt="儀表板圖表1" id="dashboard-img-1" class="dashboard-img active" style="cursor: pointer;">
+                    <img src="img/儀表板圖表2.jpg" alt="儀表板圖表2" id="dashboard-img-2" class="dashboard-img" style="display: none; cursor: pointer;">
+                </div>
+            </section>
+
+            <!-- 亮點案例 -->
+            <section class="cases-section" id="cases"
+                aria-labelledby="cases-heading">
+                <!-- 背景影片 -->
+                <div class="cases-video-background" data-aos="fade-up" data-aos-delay="100">
+                    <video autoplay muted loop playsinline class="cases-bg-video">
+                        <source src="img/亮點案例2.mp4" type="video/mp4">
+                    </video>
+                   
+                </div>
+
+                <div class="container">
+                  
+ <div class="section-heading aos-init aos-animate"
+                        data-aos="fade-up" data-aos-delay="200"
+                        style="justify-self: center;">
+                        <span class="quote-mark"><img src="img/link-icon2.svg"
+                                alt role="presentation"></span>
+                        <h2 style="color: #fff;">我們的成就</h2>
+                        <span class="quote-mark2"><img src="img/footer-logo2.svg"
+                                alt role="presentation"></span>
+                    </div>
+                    <!-- 案例統計資訊 -->
+                    <div class="cases-stats" data-aos="fade-up" data-aos-delay="150">
+                         
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="stat-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M9 11L12 14L22 4M21 12V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">150+</div>
+                            <div class="stat-label">成功案例</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="250">
+                            <div class="stat-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21M23 21V19C22.9993 18.1137 22.7044 17.2528 22.1614 16.5523C21.6184 15.8519 20.8581 15.3516 20 15.13M16 3.13C16.8604 3.3503 17.623 3.8507 18.1676 4.55231C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89317 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88M13 7C13 9.20914 11.2091 11 9 11C6.79086 11 5 9.20914 5 7C5 4.79086 6.79086 3 9 3C11.2091 3 13 4.79086 13 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">80+</div>
+                            <div class="stat-label">參與機構</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">35%</div>
+                            <div class="stat-label">平均減碳率</div>
+                        </div>
+                        <div class="stat-item" data-aos="zoom-in" data-aos-delay="350">
+                            <div class="stat-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="stat-number">25</div>
+                            <div class="stat-label">獲獎案例</div>
+                        </div>
+                    </div>
+
+                  
+                </div>
+            </section>
+    <!-- 常見問題主題 -->
+            <section class="topics-section" id="topics" data-aos="fade-up" data-aos-delay="150">
+        <img src="img/Highlights.webp" alt="儀表板圖表1" id="dashboard-img-1" class="dashboard-img active" style="cursor: pointer;">   
+            </section>
+
+            <!-- 常見問題主題 -->
+            <section data-aos="fade-up" data-aos-delay="150" class="topics-section" id="topics" style="margin-top: -5%; position: relative; z-index: 2;">
+        <img src="img/常見問題.webp" alt="儀表板圖表1" id="dashboard-img-1" class="dashboard-img active" >   
+            </section>
+
+            <!-- 相關網站 -->
+            <section class="related-links" aria-labelledby="relatedLinksTitle">
+                <div class="cases-video-background">
+                    <video autoplay muted loop playsinline class="cases-bg-video">
+                        <source src="img/亮點案例.mp4" type="video/mp4">
+                    </video>
+                   
+                </div>
+                <div class="container">
+                   <div class="section-heading aos-init aos-animate"
+                        data-aos="fade-up" data-aos-delay="100"
+                        style="justify-self: center;">
+                        <span class="quote-mark"><img src="img/link-icon2.svg"
+                                alt role="presentation"></span>
+                        <h2 style="color: #fff;">相關連結</h2>
+                        <span class="quote-mark2"><img src="img/footer-logo2.svg"
+                                alt role="presentation"></span>
+                    </div>
+                    <div class="rl-grid">
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="100">
+                            <a class="rl-card" href="#" title="衛生福利部">
+                                <span class="rl-text">衛生福利部</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="100">
+                            <a class="rl-card" href="#" title="行政院環境部">
+                                <span class="rl-text">行政院環境部</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="200">
+                            <a class="rl-card" href="#">
+                                <span class="rl-text">財團法人環境資源研究發展基金會</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="300">
+                            <a class="rl-card" href="#">
+                                <span class="rl-text">EMS-空水廢毒管理資訊系統</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="400">
+                            <a class="rl-card" href="#">
+                                <span class="rl-text">事業廢棄物申報及管理資訊系統</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="500">
+                            <a class="rl-card" href="#">
+                                <span
+                                    class="rl-text">事業廢棄物管制資訊網<br />事業廢棄物名稱及代碼查詢</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="600">
+                            <a class="rl-card" href="#">
+                                <span
+                                    class="rl-text">資源再利用管理資訊系統<br />(公告及許可再利用查詢)</span>
+                            </a>
+                        </div>
+                        <div data-aos="fade-up" data-aos-duration="600"
+                            data-aos-delay="700">
+                            <a class="rl-card" href="#">
+                                <span class="rl-text">網站名稱網站名稱網站名稱</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            
+            </section>   <div class="footer_vector" data-aos="fade-up" data-aos-duration="800"
+            data-aos-delay="100">
+            <img src="img/life_img.svg" alt="life_img" class="life_img"
+                data-aos="fade-bottom" data-aos-duration="800"
+                data-aos-delay="300">
+        </div>
+        </main>
+    
+     
+        <!-- 頁腳區 -->
+        <footer class="webFooter" data-aos="fade-down" id="accesskey_Z">
+            <a href="#accesskey_Z" class="accesskey" accesskey="Z"
+                title="下方功能區塊(Accesskey Z)">:::</a>
+
+            <div class="middle">
+                <div class="logo"><img alt src="img/healthy_logo.png"></div>
+
+                <div class="contactInfo">
+                    <p>衛生福利部地址：115204 台北市南港區忠孝東路6段488號</p>
+
+                    <p>總機電話：(02)8590-6666 傳真號碼：(02)8590-6000</p>
+                </div>
+
+                <ul class="imageLinks">
+                    <li class="disk">
+                        <a aria-label="facebook(另開新視窗)"
+                            href="https://www.mohw.gov.tw/cp-81-9428-1.html"><img
+                                alt="facebook"
+                                src="img/icon_fb.svg" title="另開新視窗"></a>
+                    </li>
+                    <li class="disk"><a aria-label="Line(另開新視窗)"
+                            href="https://www.mohw.gov.tw/cp-81-37724-1.html"><img
+                                alt="Line" src="img/icon_line.svg"
+                                title="另開新視窗"></a></li>
+                    <li class="disk"><a aria-label="X (舊稱 Twitter)(另開新視窗)"
+                            href="https://x.com/MOHW_Taiwan"
+                            target="_blank"><img alt="X (Twiter)"
+                                src="img/icon_x.svg" title="另開新視窗"></a></li>
+                    </li>
+                    <li class="disk"><a aria-label="YouTube(另開新視窗)"
+                            href="https://www.mohw.gov.tw/cp-81-9463-1.html"
+                            target><img alt="YouTube" src="img/icon_youTube.svg"
+                                title="另開新視窗"></a></li>
+                    <li class="badge"><a aria-label="我的E政府(另開新視窗)"
+                            href="https://www.gov.tw/" target="_blank"><img
+                                alt="eGOV" src="img/egov.png"
+                                title="另開新視窗"></a></li>
+                    <li class="badge"><a aria-label="無障礙2.0 AA 標章(另開新視窗)"
+                            href="https://accessibility.moda.gov.tw/Applications/Detail?category=20231227102540"
+                            target="_blank"><img alt="無障礙標章" src="img/aa.webp"
+                                title="另開新視窗"></a></li>
+                </ul>
+            </div>
+
+            <div class="base">
+                <ul class="textLinks">
+                    <li><a
+                            href="https://www.mohw.gov.tw/cp-81-156-1.html">位置圖</a></li>
+                    <li><a
+                            href="https://www.mohw.gov.tw/cp-81-157-1.html">資訊安全政策</a></li>
+                    <li><a
+                            href="https://www.mohw.gov.tw/cp-81-158-1.html">隱私權政策</a></li>
+                    <li><a
+                            href="https://www.mohw.gov.tw/cp-81-155-1.html">政府網站資料開放宣告</a></li>
+                </ul>
+
+                <div class="visiters">瀏覽人次：0</div>
+            </div>
+        </footer>
+
+        <button class="scroll-top-btn" id="scrollTopBtn" aria-label="回到頂部">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M12 19V5M5 12L12 5L19 12" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round"></path>
+            </svg>
+        </button>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="js/main.js" defer></script>
+    </body>
+
+</html>

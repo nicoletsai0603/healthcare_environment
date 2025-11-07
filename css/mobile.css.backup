@@ -1,0 +1,852 @@
+﻿/* 響應式設計 (Responsive Design) */
+
+@media screen and (max-width: 864px) {
+.tab-controls-wrapper{ border-bottom: #acacac 1px solid;}
+}
+/* 響應式設計 - 平板 (1199px以下) */
+@media screen and (max-width: 1500px) {
+    .section-heading {
+        order: -1;
+        grid-column: 1 / -1;
+        justify-self: center;
+    }
+
+    .dashboard-content {
+        grid-template-columns: 120px 1fr 1fr;
+        gap: 20px;
+    }
+
+    .dashboard-download img {
+        width: 100px;
+    }
+}
+
+/* 響應式設計 - 平板直向 (992px以下) */
+@media screen and (max-width: 992px) {
+    .dashboard-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .dashboard-download {
+        grid-column: 1 / -1;
+        margin-bottom: 10px;
+    }
+
+    .dashboard-download img {
+        width: 100px;
+    }
+}
+
+/* 響應式設計 - 手機 (768px以下) */
+@media screen and (max-width: 768px) {
+    .dashboard-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .dashboard-download {
+        grid-column: 1;
+        order: -1;
+    }
+
+    .dashboard-download img {
+        width: 80px;
+    }
+}
+/* 在 1400px 以下顯示手機版標題 */
+@media screen and (max-width: 1400px) {
+    .topics-section .section-heading-mobile {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+
+    .topic-card {
+        padding: 28px 24px;
+        border-radius: 24px;
+    }
+
+
+
+}
+
+@media screen and (max-width: 1400px) {
+    .topics-wrapper {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .topics-hero {
+        align-items: center;
+    }
+
+    /* 隱藏 topics-hero 內的標題 */
+    .topics-hero .section-heading {
+        display: none;
+    }
+
+    .topics-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .topics-section {
+        padding: 80px 0 100px;
+    }
+
+    .topics-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+    }
+
+    .topic-card {
+        padding: 24px 20px;
+        gap: 16px;
+    }
+
+ 
+
+    .topics-heading-wrap {
+        gap: 8px;
+    }
+
+    .topics-heading {
+        font-size: 2.2rem;
+    }
+
+    .topics-quote {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-card {
+        border-radius: 20px;
+    }
+
+    .topics-heading {
+        font-size: 2rem;
+    }
+
+    .topics-quote {
+        font-size: 2.5rem;
+    }
+
+    .topics-section::before,
+    .topics-section::after {
+        width: 650px;
+        height: 220px;
+    }
+
+    .topics-section::before {
+        bottom: -180px;
+        transform: translateX(-60%);
+    }
+
+    .topics-section::after {
+        bottom: -150px;
+        left: 40%;
+    }
+}
+@media screen and (max-width: 1600px) {
+    .cases-section .case-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .cases-section {
+        padding: 60px 0;
+    }
+
+    .cases-section .case-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+   
+}
+/* 獢??閬賢? (1200px 隞乩?) */
+@media screen and (min-width: 1200px) {
+
+    /* ?梯????詨?? */
+    .nav_box .top_area .m-menubar {
+        display: none;
+    }
+
+    /* 憿舐內獢?蜓?詨 */
+    .nav_box .main_area {
+        display: block;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+
+    /* ?脫迫瘞游像皛曉? */
+    html,
+    body {
+        overflow-x: hidden;
+        max-width: 100vw;
+    }
+
+    /* 憿舐內???慰?⊿?格???*/
+    .nav_box .top_area .m-menubar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 24px;
+        cursor: pointer;
+        padding: 0;
+        background: transparent;
+        border: none;
+    }
+
+    /* 瞍Ｗ?詨銝?蝺?*/
+    .m-menubar .bar {
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        display: block;
+        position: relative;
+    }
+
+    .m-menubar .bar::before,
+    .m-menubar .bar::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        transition: all 0.3s ease;
+        position: absolute;
+        left: 0;
+    }
+
+    .m-menubar .bar::before {
+        top: -8px;
+    }
+
+    .m-menubar .bar::after {
+        top: 8px;
+    }
+
+    /* ???詨撅???? */
+    .nav_box .top_area .m-menubar.showbar .bar {
+        background-color: transparent;
+    }
+
+    .m-menubar.showbar .bar {
+        background-color: transparent;
+    }
+
+    .m-menubar.showbar .bar::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .m-menubar.showbar .bar::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    /* ???見撘矽??*/
+    .nav_box .top_area {
+        background-color: #065b4c;
+        padding: 0;
+        height: auto;
+        min-height: 60px;
+    }
+
+    .nav_box .top_area .container {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 15px;
+        gap: 10px;
+    }
+
+    .nav_box .top_area .logo_box {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .nav_box .top_area .logo_box h1 {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        min-width: 0;
+        flex: 1;
+    }
+
+    .nav_box .top_area .logo_box .logo {
+        height: 40px;
+        width: auto;
+        flex-shrink: 0;
+    }
+
+    .nav_box .top_area .logo_box .logo_name {
+        height: 25px;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }
+
+    /* ?梯?獢???賢? */
+    .nav_box .top_area .more_link .first-area,
+    .nav_box .top_area .more_link .second_area {
+        display: none;
+    }
+
+    .nav_box .top_area .more_link {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .nav_box .top_area .more_link .third_area {
+        display: flex;
+    }
+
+    /* ???蜓?詨摰孵 */
+    .nav_box .main_area {
+        position: fixed;
+        background-color: #fff;
+        overflow-y: auto;
+        overflow-x: hidden;
+        display: none;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        max-width: 100%;
+        height: calc(100vh - 60px);
+        z-index: 9999;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 0;
+        padding: 0;
+    }
+
+    /* 撅??詨?＊蝷?*/
+    .open_mobile_menu .nav_box .main_area {
+        display: block;
+    }
+
+    /* 銝駁?桀?銵?*/
+
+
+
+    .nav_box .main_area .main_menu {
+        flex-direction: column;
+        width: 100%;
+        display: flex;
+        padding: 0;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .nav_box .main_area .container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* ?詨? */
+    .nav_box .main_area .main_menu .item {
+        border-bottom: 1px solid rgba(6, 91, 76, 0.1);
+        width: 100%;
+        display: block;
+        margin: 0;
+        background-color: #fff;
+    }
+
+    .nav_box .main_area .main_menu .item>a {
+        padding: 15px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #333;
+        font-size: 1.125rem;
+        font-weight: 500;
+        text-decoration: none;
+        background: #fff;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ?詨?蝞剝 */
+    .nav_box .main_area .main_menu .item>a::after {
+        content: "\276F";
+        font-size: 1rem;
+        transition: transform 0.3s ease;
+        color: #065b4c; border: 0;
+    }
+
+    .nav_box .main_area .main_menu .item>a.show::after {
+        transform: rotate(90deg);
+    }
+
+    .nav_box .main_area .main_menu .item:hover {
+        background-color: rgba(6, 91, 76, 0.05);
+    }
+
+    /* ??????hover 憿舐內銝??詨 */
+    .nav_box .main_area .main_menu .item:hover .dropdown-menu,
+    .nav_box .main_area .main_menu .item:focus-within .dropdown-menu,
+    .nav_box .main_area .main_menu .item.grid_item:hover .dropdown-menu,
+    .nav_box .main_area .main_menu .item.grid_item:focus-within .dropdown-menu {
+        display: none !important;
+    }
+
+    /* ???????*/
+    .nav_box .main_area .main_menu .item .dropdown-menu {
+        position: static !important;
+        transform: none !important;
+        border: none;
+        padding: 0;
+        background: #f8f9fa;
+        box-shadow: none;
+        display: none !important;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        width: 100%;
+        margin: 0;
+    }
+
+    /* ?????.show class ?＊蝷箔????*/
+    .nav_box .main_area .main_menu .item .dropdown-menu.show {
+        display: block !important;
+        max-height: 500px;
+    }
+
+    /* ???撥?嗆?????桃?游???嚗甈? */
+    .nav_box .main_area .main_menu .item.grid_item .dropdown-menu.show {
+        display: block !important;
+        grid-template-columns: none;
+    }
+
+    .nav_box .main_area .main_menu .item .dropdown-menu li {
+        list-style: none;
+        width: 100%;
+        margin: 0;
+        border-top: #e2e2e2 1px solid;
+    }
+
+    .nav_box .main_area .main_menu .item .dropdown-menu li a {
+        padding: 12px 20px 12px 40px;
+        color: #555;
+        display: block;
+        position: relative;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: all 0.2s ease;
+        background: #f8f9fa;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+
+
+    .nav_box .main_area .main_menu .item .dropdown-menu li a:hover,
+    .nav_box .main_area .main_menu .item .dropdown-menu li a:focus {
+        background-color: rgba(6, 91, 76, 0.1);
+        color: #065b4c;
+        padding-left: 45px;
+    }
+
+    /* ?脫迫body皛曉? */
+    body.open_mobile_menu {
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+/* 撟單撠箏站 (1024px 隞乩?) */
+@media (max-width: 1024px) {
+    .nav-menu {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .branding {
+        padding: 16px 20px;
+    }
+
+    main {
+        gap: 56px;
+    }
+
+    .cards-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 60px;
+    }
+
+    .faq-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .webFooter .middle {
+        display: flex;
+        align-items: center;
+        padding-bottom: 0
+    }
+
+    .webFooter .middle .logo {
+        flex: 0 0 100px
+    }
+
+    .webFooter .middle .contactInfo {
+        flex: 1 1 auto
+    }
+
+    .webFooter .middle .imageLinks {
+        flex: 1 0 auto;
+        padding: 0;
+        margin-left: 20px;
+        min-width: 388px;
+        text-align: right
+    }
+
+    .webFooter .base {
+        overflow: hidden;
+        padding-top: 20px
+    }
+
+    .webFooter .base .textLinks {
+        float: left
+    }
+
+    .webFooter .base .visiters {
+        float: right;
+        margin: 2px 0
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    .webFooter .logo {
+        left: calc(50% - 558px)
+    }
+
+    .webFooter .middle,
+    .webFooter .base {
+        padding-left: calc(50% - 558px);
+        padding-right: calc(50% - 558px)
+    }
+}
+/* ??撠箏站 (768px 隞乩?) */
+@media (max-width: 768px) {
+    :root {
+        --header-height: 80px;
+        --nav-height: 0;
+    }
+
+
+
+    .news-list li {
+        grid-template-columns: 1fr;
+        gap: 6px;
+    }
+
+    .more-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .topics-wrapper {
+        grid-template-columns: 1fr;
+        gap: 36px;
+        justify-items: center;
+    }
+
+    .topics-hero {
+        align-items: center;
+    }
+
+    .topics-heading-wrap {
+        justify-content: center;
+    }
+
+    .topics-illustration {
+        max-width: 662px;transform: translateY(20%);
+    }
+
+    .footer-top {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-brand {
+        justify-content: center;
+    }
+
+    .footer-links {
+        align-items: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .main-nav {
+        display: none;
+    }
+
+    .main-content {
+        margin-top: var(--header-height);
+        padding: 40px 0;
+    }
+
+    .logo-section {
+        gap: 10px;
+    }
+
+    .logo {
+        width: 40px;
+    }
+
+    .dept-name {
+        font-size: 0.875rem;
+    }
+
+    .system-title {
+        font-size: 1rem;
+    }
+
+    .cards-wrapper {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 0 15px;
+    }
+
+    .feature-card {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .faq-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .faq-category {
+        padding: 25px 15px;
+    }
+
+    .category-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .links-section {
+        padding: 60px 0;
+    }
+
+    .section-header {
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 40px;
+    }
+
+    .section-header h2 {
+        font-size: 1.75rem;
+    }
+
+    .link-item a {
+        font-size: 1rem;
+    }
+
+    .scroll-top-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+/* 撠???撠箏站 (480px 隞乩?) */
+@media (max-width: 480px) {
+    .utility-bar .container {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .branding {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .brand-mark {
+        width: 52px;
+        height: 52px;
+    }
+
+    main {
+        padding: 36px 0 72px;
+        gap: 40px;
+    }
+
+    .case-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topics-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topic-icon {
+        width: 78px;
+        height: 78px;
+    }
+
+    .links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scroll-top-btn {
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .container-wide {
+        padding: 0 15px;
+    }
+
+    .system-title {
+        font-size: 0.875rem;
+    }
+
+    .dept-name {
+        font-size: 0.75rem;
+    }
+
+    .feature-cards-section {
+        padding: 40px 0;
+    }
+
+    .card-bg {
+        height: 350px;
+    }
+
+    .faq-section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
+
+/* ===================================
+   颲脫平?典?閬賢??踵?撘身閮?
+   =================================== */
+
+
+
+/* 撠撟?璈??(480px 隞乩?) */
+@media screen and (max-width: 480px) {
+    .nav_box .top_area .container {
+        padding: 8px 10px;
+    }
+
+    .nav_box .top_area .logo_box .logo {
+        height: 35px;
+    }
+
+    .nav_box .top_area .logo_box h1 {
+        gap: 6px;
+    }
+
+    /* 憒???憭芷嚗??logo_name */
+    .nav_box .top_area .logo_box .logo_name {
+        display: none;
+    }
+
+
+    .nav_box .top_area .more_link {
+        gap: 8px;
+    }
+
+    .m-menubar {
+        width: 26px;
+        height: 20px;
+    }
+
+    .nav_box .main_area {
+        top: 50px;
+        height: calc(100vh - 50px);
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .nav_box .main_area .main_menu .item>a {
+        font-size: 1rem;
+        padding: 12px 15px;
+    }
+
+    .nav_box .main_area .main_menu .item .dropdown-menu li a {
+        font-size: 0.9375rem;
+        padding: 10px 15px 10px 35px;
+    }
+
+    .nav_box .main_area .main_menu .item .dropdown-menu li a::before {
+        left: 20px;
+    }
+}
+
+/* 璆萄??Ｗ??芸? (360px 隞乩?) */
+@media screen and (max-width: 360px) {
+    .nav_box .top_area .logo_box .logo {
+        height: 30px;
+    }
+
+    .nav_box .top_area .logo_box::after {
+        font-size: 0.75rem;
+    }
+
+    .nav_box .top_area .more_link .third_area {
+        display: none;
+    }
+}
